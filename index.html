@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webkita - Solutions for Web Creation & Server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Liquid Cursor -->
+    <div class="liquid-cursor" id="cursor"></div>
+    
+    <!-- Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Webkita</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Get Quote</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to <span>Webkita</span></h1>
+        <p>Your complete solution for professional web creation and server management. We build stunning websites and provide reliable server solutions.</p>
+        <a href="#contact" class="cta-btn">Get a Quote</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Web Creation</h3>
+                <p>Professional, modern, and responsive websites tailored to your needs. From landing pages to full e-commerce solutions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🖥️</div>
+                <h3>Server Solutions</h3>
+                <p>Reliable hosting and server management. We ensure your website runs fast, secure, and always online.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Web Maintenance</h3>
+                <p>Keep your website updated and secure. We handle updates, backups, and technical support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2 class="section-title">Our Pricing</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Basic</h3>
+                <div class="price">$99<span>/project</span></div>
+                <ul>
+                    <li>Single Page Website</li>
+                    <li>Responsive Design</li>
+                    <li>Contact Form</li>
+                    <li>Basic SEO</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Order Now</a>
+            </div>
+            <div class="price-card featured">
+                <h3>Professional</h3>
+                <div class="price">$299<span>/project</span></div>
+                <ul>
+                    <li>Multi-page Website</li>
+                    <li>Custom Design</li>
+                    <li>CMS Integration</li>
+                    <li>Advanced SEO</li>
+                    <li>Server Setup</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Order Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>E-commerce Solution</li>
+                    <li>Custom Development</li>
+                    <li>Dedicated Server</li>
+                    <li>24/7 Support</li>
+                    <li>Monthly Maintenance</li>
+                </ul>
+                <a href="#contact" class="cta-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Quote Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Ask for Price</h2>
+        <form class="contact-form" id="quoteForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="web-creation">Web Creation</option>
+                    <option value="server">Server Solutions</option>
+                    <option value="maintenance">Web Maintenance</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" placeholder="Describe your project requirements..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Quote Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Webkita - Solutions for Web Creation & Server. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
